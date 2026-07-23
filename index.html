@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sajjad Ahamed</title>
+<meta name="description" content="Sajjad Ahamed — PhD candidate in Political Science at Wayne State University. International security, nuclear deterrence, strategic stability, great-power competition.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FCFCFA;
+  --ink:#1B1C1E;
+  --muted:#6B6F75;
+  --accent:#2E4A66;
+  --rule:#E8E6E1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Newsreader",Georgia,"Times New Roman",serif;
+  font-size:1.075rem;
+  line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:41rem;margin:0 auto;padding:2.75rem 1.5rem 4rem}
+header.site{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:3.25rem}
+.brand{font-size:1.05rem;font-weight:500;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+nav{display:flex;gap:1.5rem}
+nav a{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  color:var(--muted);
+  text-decoration:none;
+  padding-bottom:2px;
+  border-bottom:1px solid transparent;
+  transition:color .15s,border-color .15s;
+}
+@media (prefers-reduced-motion: reduce){nav a{transition:none}}
+nav a:hover,nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+h1.name{
+  font-size:clamp(2.3rem,6.5vw,3.1rem);
+  font-weight:500;
+  line-height:1.08;
+  letter-spacing:-.012em;
+  margin:0 0 .6rem;
+}
+.tagline{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.17em;
+  color:var(--muted);
+  margin:0 0 2.4rem;
+}
+.headshot{width:100%;max-width:380px;height:auto;display:block;border-radius:3px;margin:0 0 2.4rem}
+p{margin:0 0 1.15rem}
+main a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(46,74,102,.35);transition:text-decoration-color .15s}
+main a:hover{text-decoration-color:var(--accent)}
+em,i{font-style:italic}
+.contact{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--rule)}
+footer{
+  margin-top:4rem;
+  padding-top:1.4rem;
+  border-top:1px solid var(--rule);
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.7rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent}
+footer a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+@media (max-width:560px){
+  header.site{flex-direction:column;gap:.9rem}
+  nav{gap:1.1rem;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <a class="brand" href="index.html">Sajjad Ahamed</a>
+  <nav aria-label="Main">
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="media.html">Media</a>
+    <a href="cv.html">CV</a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="name">Sajjad Ahamed</h1>
+  <p class="tagline">International Security &middot; Nuclear Deterrence &middot; Strategic Stability</p>
+
+  <img class="headshot" src="assets/headshot.jpg" alt="Portrait of Sajjad Ahamed" width="900" height="1100">
+
+  <p>I am a PhD candidate in Political Science at Wayne State University in Detroit. My research sits at the intersection of international security, nuclear deterrence, and strategic stability, with a focus on great-power competition among the United States, China, and Russia.</p>
+
+  <p>My dissertation, <em>International Security in a Tri-Polar World: Comparative Insights into New Cold War Dynamics</em>, examines how the emergence of a three-way nuclear order reshapes deterrence relationships and the risk of major-power war. The quantitative core of the project models major-power war onset using rare-events approaches, including Firth penalized logistic regression and negative binomial specifications. My dissertation is chaired by Daniel Geller.</p>
+
+  <p>My research has appeared in the <em>Journal of Current Chinese Affairs</em> and <em>African Studies Quarterly</em>, and in an edited volume of the Alva Myrdal Centre for Nuclear Disarmament at Uppsala University. My policy writing on nuclear escalation dynamics in South Asia has appeared in <em>The Diplomat</em>.</p>
+
+  <p>At Wayne State, I hold the 2025 Saperstein Symposium Fellowship on the Science of Peace and serve as a graduate teaching assistant, currently for PS&nbsp;1050: Understanding Political Science Statistics.</p>
+
+  <p>Before my doctoral studies, I earned BA and MA degrees in Peace and Conflict Studies from the University of Dhaka and worked in humanitarian response with CARE Bangladesh and BRAC, including monitoring, evaluation, and learning roles in the Rohingya refugee response.</p>
+
+  <div class="contact">
+    <!-- TODO: replace the email and LinkedIn URL below -->
+    <p>You can email me at <a href="mailto:your.email@wayne.edu">your.email@wayne.edu</a> or find me on <a href="https://www.linkedin.com/in/YOUR-HANDLE/">LinkedIn</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; 2026 Sajjad Ahamed</span>
+  <span>Wayne State University</span>
+</footer>
+
+</div>
+</body>
+</html>
