@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CV — Sajjad Ahamed</title>
-<meta name="description" content="Curriculum vitae of Sajjad Ahamed, PhD candidate in Political Science at Wayne State University.">
+<meta name="description" content="Curriculum vitae of Sajjad Ahamed, Ph.D. candidate in Political Science at Wayne State University.">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -54,24 +54,37 @@ h1.name{
   font-weight:500;
   line-height:1.08;
   letter-spacing:-.012em;
-  margin:0 0 .6rem;
+  margin:0 0 .7rem;
 }
-.tagline{
+h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0 0 2rem}
+.affil{
   font-family:"Archivo",system-ui,sans-serif;
-  font-size:.72rem;
-  text-transform:uppercase;
-  letter-spacing:.17em;
+  font-size:.92rem;
+  line-height:1.62;
   color:var(--muted);
   margin:0 0 2.4rem;
 }
-.headshot{width:100%;max-width:380px;height:auto;display:block;border-radius:3px;margin:0 0 2.4rem}
+.affil .role{color:var(--ink);font-weight:500}
+h2.label{
+  display:flex;align-items:center;gap:.8rem;
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+  color:var(--muted);margin:0 0 1.2rem;
+}
+h2.label::before{content:"";width:1.5rem;height:1px;background:var(--accent);flex:none}
+h3.sub{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.8rem;font-weight:600;letter-spacing:.03em;
+  color:var(--ink);margin:0 0 .9rem;
+}
 p{margin:0 0 1.15rem}
 main a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(46,74,102,.35);transition:text-decoration-color .15s}
 main a:hover{text-decoration-color:var(--accent)}
 em,i{font-style:italic}
-.contact{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--rule)}
+section{margin:0 0 2.9rem}
+section:last-of-type{margin-bottom:2rem}
 footer{
-  margin-top:4rem;
+  margin-top:3.5rem;
   padding-top:1.4rem;
   border-top:1px solid var(--rule);
   font-family:"Archivo",system-ui,sans-serif;
@@ -93,7 +106,30 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
 }
 </style>
 <style>
-h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0 0 2.2rem}
+.entry{margin:0 0 1.45rem}
+.entry:last-child{margin-bottom:0}
+.entry p{margin:0}
+.entry .meta{color:var(--muted);font-size:1rem}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{
+  position:relative;padding-left:1.05rem;margin:0 0 .85rem;line-height:1.6;
+}
+ul.plain li:last-child{margin-bottom:0}
+ul.plain li::before{
+  content:"";position:absolute;left:0;top:.72em;
+  width:5px;height:5px;border-radius:50%;background:var(--accent);
+}
+.course{margin:0 0 1.05rem}
+.course:last-child{margin-bottom:0}
+.course .title{margin:0 0 .08rem;font-weight:500}
+.course .terms{margin:0;color:var(--muted);font-size:1rem}
+.row{margin:0 0 1.2rem}
+.row .k{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.68rem;text-transform:uppercase;letter-spacing:.13em;
+  color:var(--muted);margin:0 0 .15rem;
+}
+.row .v{margin:0}
 .dl{
   display:inline-block;
   font-family:"Archivo",system-ui,sans-serif;
@@ -101,7 +137,7 @@ h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;lett
   color:var(--paper);background:var(--accent);
   padding:.75rem 1.3rem;border-radius:3px;
   text-decoration:none;
-  margin:.6rem 0 1.6rem;
+  margin:.4rem 0 1.4rem;
 }
 .dl:hover{background:#243B52}
 .updated{font-family:"Archivo",system-ui,sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
@@ -115,20 +151,47 @@ h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;lett
   <nav aria-label="Main">
     <a href="research.html">Research</a>
     <a href="teaching.html">Teaching</a>
-    <a href="media.html">Media</a>
     <a href="cv.html" aria-current="page">CV</a>
+    <a href="media.html">Media</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
   <h1 class="page">Curriculum Vitae</h1>
 
-  <p>My full CV covers my education, publications, teaching, fellowships, conference activity, and professional experience.</p>
+  <p>My full CV covers education, publications, teaching, research experience, fellowships and awards, professional service, and prior humanitarian work.</p>
 
-  <!-- TODO: place your CV PDF at assets/cv.pdf and update the date below every time you replace it. -->
   <p><a class="dl" href="assets/cv.pdf">Download CV (PDF)</a></p>
 
-  <p class="updated">Last updated: [Month Year]</p>
+  <p class="updated">Last updated: July 2026</p>
+
+  <section>
+    <h2 class="label">Fellowships and Awards</h2>
+    <ul class="plain">
+      <li>Sarasohn Dissertation Fellowship, Department of Political Science and College of Liberal Arts and Sciences, Wayne State University (2026&ndash;27)</li>
+      <li>Saperstein Symposium on the Science of Peace Fellowship, Center for Peace and Conflict Studies, Wayne State University (2025)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="label">Professional Service</h2>
+    <ul class="plain">
+      <li>Graduate Ambassador, Wayne State University (2025&ndash;present)</li>
+      <li>Research Evaluator, CLAS Undergraduate Research Symposium, Wayne State University (2025)</li>
+      <li>Peer Reviewer, <em>Global Studies Quarterly</em></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="label">Academic Memberships</h2>
+    <ul class="plain">
+      <li>American Political Science Association (2023&ndash;present)</li>
+      <li>International Studies Association (2023&ndash;present)</li>
+      <li>Midwest Political Science Association (2023&ndash;present)</li>
+    </ul>
+  </section>
+
 </main>
 
 <footer>

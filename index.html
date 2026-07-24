@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sajjad Ahamed</title>
-<meta name="description" content="Sajjad Ahamed — PhD candidate in Political Science at Wayne State University. International security, nuclear deterrence, strategic stability, great-power competition.">
+<meta name="description" content="Sajjad Ahamed — Ph.D. candidate and doctoral fellow in Political Science at Wayne State University. International security, nuclear deterrence, great power politics, conflict analysis.">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -54,24 +54,37 @@ h1.name{
   font-weight:500;
   line-height:1.08;
   letter-spacing:-.012em;
-  margin:0 0 .6rem;
+  margin:0 0 .7rem;
 }
-.tagline{
+h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0 0 2rem}
+.affil{
   font-family:"Archivo",system-ui,sans-serif;
-  font-size:.72rem;
-  text-transform:uppercase;
-  letter-spacing:.17em;
+  font-size:.92rem;
+  line-height:1.62;
   color:var(--muted);
   margin:0 0 2.4rem;
 }
-.headshot{width:100%;max-width:380px;height:auto;display:block;border-radius:3px;margin:0 0 2.4rem}
+.affil .role{color:var(--ink);font-weight:500}
+h2.label{
+  display:flex;align-items:center;gap:.8rem;
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+  color:var(--muted);margin:0 0 1.2rem;
+}
+h2.label::before{content:"";width:1.5rem;height:1px;background:var(--accent);flex:none}
+h3.sub{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.8rem;font-weight:600;letter-spacing:.03em;
+  color:var(--ink);margin:0 0 .9rem;
+}
 p{margin:0 0 1.15rem}
 main a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(46,74,102,.35);transition:text-decoration-color .15s}
 main a:hover{text-decoration-color:var(--accent)}
 em,i{font-style:italic}
-.contact{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--rule)}
+section{margin:0 0 2.9rem}
+section:last-of-type{margin-bottom:2rem}
 footer{
-  margin-top:4rem;
+  margin-top:3.5rem;
   padding-top:1.4rem;
   border-top:1px solid var(--rule);
   font-family:"Archivo",system-ui,sans-serif;
@@ -92,6 +105,51 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
   nav{gap:1.1rem;flex-wrap:wrap}
 }
 </style>
+<style>
+.about::after{content:"";display:table;clear:both}
+.portrait{
+  float:left;
+  width:225px;
+  height:auto;
+  margin:.2rem 1.7rem 1rem 0;
+  border-radius:3px;
+}
+.areas{
+  list-style:none;padding:0;margin:0;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.55rem 1.6rem;
+}
+.areas li{position:relative;padding-left:1.05rem;font-size:1.03rem;line-height:1.5}
+.areas li::before{
+  content:"";position:absolute;left:0;top:.65em;
+  width:5px;height:5px;border-radius:50%;background:var(--accent);
+}
+.edu{margin:0 0 1.3rem}
+.edu:last-child{margin-bottom:0}
+.edu .deg{margin:0 0 .1rem;font-weight:500}
+.edu .inst{margin:0;color:var(--muted);font-size:1rem}
+.links{
+  display:flex;flex-wrap:wrap;gap:.5rem;
+  border-top:1px solid var(--rule);
+  padding-top:1.7rem;
+}
+.links a{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);text-decoration:none;
+  border:1px solid var(--rule);border-radius:2rem;
+  padding:.5rem .82rem;
+  transition:color .15s,border-color .15s,background-color .15s;
+}
+.links a:hover{color:var(--paper);background-color:var(--accent);border-color:var(--accent)}
+@media (prefers-reduced-motion: reduce){.links a{transition:none}}
+.links svg{width:14px;height:14px;flex:none}
+@media (max-width:600px){
+  .portrait{float:none;width:100%;max-width:250px;margin:0 0 1.5rem}
+  .areas{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -101,31 +159,76 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
   <nav aria-label="Main">
     <a href="research.html">Research</a>
     <a href="teaching.html">Teaching</a>
-    <a href="media.html">Media</a>
     <a href="cv.html">CV</a>
+    <a href="media.html">Media</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
   <h1 class="name">Sajjad Ahamed</h1>
-  <p class="tagline">International Security &middot; Nuclear Deterrence &middot; Strategic Stability</p>
+  <p class="affil"><span class="role">Ph.D. Candidate and Doctoral Fellow</span><br>
+  Department of Political Science<br>
+  Wayne State University</p>
 
-  <img class="headshot" src="assets/headshot.jpg" alt="Portrait of Sajjad Ahamed" width="800" height="1000">
+  <section class="about">
+    <h2 class="label">About</h2>
+    <img class="portrait" src="assets/headshot.jpg" alt="Portrait of Sajjad Ahamed" width="800" height="1000">
+    <p>I am a Ph.D. candidate and doctoral fellow in Political Science at Wayne State University. My major field is World Politics, with minor fields in Comparative Politics and Public Administration. I also earned an M.A. in Political Science from Wayne State University, as well as M.A. and B.A. degrees in Peace and Conflict Studies from the University of Dhaka.</p>
 
-  <p>I am a PhD candidate in Political Science at Wayne State University in Detroit. My research sits at the intersection of international security, nuclear deterrence, and strategic stability, with a focus on great-power competition among the United States, China, and Russia.</p>
+    <p>My research interests include international security, nuclear deterrence, great power politics, and conflict analysis. My doctoral dissertation, <em>International Security in a Tri-Polar World: Comparative Insights into New Cold War Dynamics</em>, examines how changing strategic relations among the United States, China, and Russia shape conflict, deterrence, and international stability.</p>
 
-  <p>My dissertation, <em>International Security in a Tri-Polar World: Comparative Insights into New Cold War Dynamics</em>, examines how the emergence of a three-way nuclear order reshapes deterrence relationships and the risk of major-power war. The quantitative core of the project models major-power war onset using rare-events approaches, including Firth penalized logistic regression and negative binomial specifications. My dissertation is chaired by Daniel Geller.</p>
+    <p>For the 2026&ndash;2027 academic year, I am serving as a Sarasohn Dissertation Fellow at Wayne State University. Previously, I worked as a Graduate Teaching Assistant and Instructor of Record. I have taught courses including Understanding Political Science Statistics, Introduction to Peace and Conflict Studies, Science, Technology, and War, and American Government.</p>
 
-  <p>My research has appeared in the <em>Journal of Current Chinese Affairs</em> and <em>African Studies Quarterly</em>, and in an edited volume of the Alva Myrdal Centre for Nuclear Disarmament at Uppsala University. My policy writing on nuclear escalation dynamics in South Asia has appeared in <em>The Diplomat</em>.</p>
+    <p>I have also served as a Graduate Research Assistant with Dr. Sharon Lean and Dr. Kyu-Nahm Jun. In these roles, I contributed to research projects on election observation, institutional transparency, political trust, and inequality-driven mistrust.</p>
 
-  <p>At Wayne State, I hold the 2025 Saperstein Symposium Fellowship on the Science of Peace and serve as a graduate teaching assistant, currently for PS&nbsp;1050: Understanding Political Science Statistics.</p>
+    <p>In 2025, I received the Saperstein Symposium Fellowship on the Science of Peace from the Center for Peace and Conflict Studies at Wayne State University. I also served as a Graduate Ambassador for the Wayne State University Graduate School during the 2025&ndash;2026 academic year.</p>
 
-  <p>Before my doctoral studies, I earned BA and MA degrees in Peace and Conflict Studies from the University of Dhaka and worked in humanitarian response with CARE Bangladesh and BRAC, including monitoring, evaluation, and learning roles in the Rohingya refugee response.</p>
+    <p>Before beginning my doctoral studies, I spent five years working with nonprofit and humanitarian organizations, specializing in monitoring and evaluation. My professional experience includes program evaluation, data analysis, quantitative and qualitative research, policy advocacy, and project management.</p>
+  </section>
 
-  <div class="contact">
-    <!-- TODO: replace the email and LinkedIn URL below -->
-    <p>You can email me at <a href="mailto:your.email@wayne.edu">your.email@wayne.edu</a> or find me on <a href="https://www.linkedin.com/in/YOUR-HANDLE/">LinkedIn</a>.</p>
-  </div>
+  <section>
+    <h2 class="label">Areas of Concentration</h2>
+    <ul class="areas">
+      <li>International Security</li>
+      <li>Nuclear Deterrence</li>
+      <li>Conflict Analysis</li>
+      <li>Great Power Politics</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="label">Education</h2>
+
+    <div class="edu">
+      <p class="deg">Ph.D. in Political Science <span class="inst" style="font-weight:400">(expected Summer 2027)</span></p>
+      <p class="inst">Wayne State University, Detroit, Michigan</p>
+    </div>
+
+    <div class="edu">
+      <p class="deg">M.A. in Political Science <span class="inst" style="font-weight:400">(2025)</span></p>
+      <p class="inst">Wayne State University, Detroit, Michigan</p>
+    </div>
+
+    <div class="edu">
+      <p class="deg">M.A. in Peace and Conflict Studies <span class="inst" style="font-weight:400">(2017)</span></p>
+      <p class="inst">University of Dhaka, Dhaka, Bangladesh</p>
+    </div>
+
+    <div class="edu">
+      <p class="deg">B.A. in Peace and Conflict Studies <span class="inst" style="font-weight:400">(2016)</span></p>
+      <p class="inst">University of Dhaka, Dhaka, Bangladesh</p>
+    </div>
+  </section>
+
+  <nav class="links" aria-label="Profiles and contact">
+    <a href="mailto:sajjad.ahamed@wayne.edu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.75" width="19" height="14.5" rx="2.2"/><path d="M3.2 6.2 12 12.6l8.8-6.4"/></svg><span>Email</span></a>
+    <a href="https://clasprofiles.wayne.edu/profile/hm1337"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.8 9.4 12 4.2l9.2 5.2"/><path d="M5.4 11.2v7M9.8 11.2v7M14.2 11.2v7M18.6 11.2v7"/><path d="M3.2 20.2h17.6"/></svg><span>Department Webpage</span></a>
+    <a href="https://scholar.google.com/citations?user=aaQjsFcAAAAJ&amp;hl=en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.2 2.6 9.1 12 14l9.4-4.9L12 4.2Z"/><path d="M6.4 11.6v4.1c0 1.6 2.5 2.9 5.6 2.9s5.6-1.3 5.6-2.9v-4.1"/></svg><span>Google Scholar</span></a>
+    <a href="https://www.linkedin.com/in/ahamedsajjad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="2.6"/><path d="M7.6 10.6v6.1M7.6 7.5v.05M11.9 16.7v-6.1M16.4 16.7v-3.5a2.3 2.3 0 0 0-4.5-.8"/></svg><span>LinkedIn</span></a>
+    <a href="https://orcid.org/0009-0000-7869-9331"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.8"/><path d="M9.1 10.5v6.1M9.1 7.9v.05M12.8 16.6v-6.1h1.8a3.05 3.05 0 0 1 0 6.1h-1.8Z"/></svg><span>ORCID</span></a>
+  </nav>
+
 </main>
 
 <footer>

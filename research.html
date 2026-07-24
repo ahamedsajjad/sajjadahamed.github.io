@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research — Sajjad Ahamed</title>
-<meta name="description" content="Publications and working papers by Sajjad Ahamed: nuclear deterrence, strategic stability, great-power competition, and regional security.">
+<meta name="description" content="Publications, submitted book chapters, and work in progress by Sajjad Ahamed on nuclear deterrence, great power politics, and international conflict.">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -54,24 +54,37 @@ h1.name{
   font-weight:500;
   line-height:1.08;
   letter-spacing:-.012em;
-  margin:0 0 .6rem;
+  margin:0 0 .7rem;
 }
-.tagline{
+h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0 0 2rem}
+.affil{
   font-family:"Archivo",system-ui,sans-serif;
-  font-size:.72rem;
-  text-transform:uppercase;
-  letter-spacing:.17em;
+  font-size:.92rem;
+  line-height:1.62;
   color:var(--muted);
   margin:0 0 2.4rem;
 }
-.headshot{width:100%;max-width:380px;height:auto;display:block;border-radius:3px;margin:0 0 2.4rem}
+.affil .role{color:var(--ink);font-weight:500}
+h2.label{
+  display:flex;align-items:center;gap:.8rem;
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+  color:var(--muted);margin:0 0 1.2rem;
+}
+h2.label::before{content:"";width:1.5rem;height:1px;background:var(--accent);flex:none}
+h3.sub{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.8rem;font-weight:600;letter-spacing:.03em;
+  color:var(--ink);margin:0 0 .9rem;
+}
 p{margin:0 0 1.15rem}
 main a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(46,74,102,.35);transition:text-decoration-color .15s}
 main a:hover{text-decoration-color:var(--accent)}
 em,i{font-style:italic}
-.contact{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--rule)}
+section{margin:0 0 2.9rem}
+section:last-of-type{margin-bottom:2rem}
 footer{
-  margin-top:4rem;
+  margin-top:3.5rem;
   padding-top:1.4rem;
   border-top:1px solid var(--rule);
   font-family:"Archivo",system-ui,sans-serif;
@@ -93,18 +106,41 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
 }
 </style>
 <style>
-h1.page{font-size:clamp(1.9rem,5vw,2.4rem);font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0 0 2.2rem}
-h2.label{
-  display:flex;align-items:center;gap:.8rem;
-  font-family:"Archivo",system-ui,sans-serif;
-  font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;
-  color:var(--muted);margin:2.8rem 0 1.3rem;
+.entry{margin:0 0 1.45rem}
+.entry:last-child{margin-bottom:0}
+.entry p{margin:0}
+.entry .meta{color:var(--muted);font-size:1rem}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{
+  position:relative;padding-left:1.05rem;margin:0 0 .85rem;line-height:1.6;
 }
-h2.label::before{content:"";width:1.5rem;height:1px;background:var(--accent);flex:none}
-.pub{margin:0 0 1.6rem}
-.pub .title{font-weight:500;margin:0 0 .15rem}
-.pub .venue{margin:0;color:var(--muted);font-size:1rem}
-.pub .venue em{color:var(--muted)}
+ul.plain li:last-child{margin-bottom:0}
+ul.plain li::before{
+  content:"";position:absolute;left:0;top:.72em;
+  width:5px;height:5px;border-radius:50%;background:var(--accent);
+}
+.course{margin:0 0 1.05rem}
+.course:last-child{margin-bottom:0}
+.course .title{margin:0 0 .08rem;font-weight:500}
+.course .terms{margin:0;color:var(--muted);font-size:1rem}
+.row{margin:0 0 1.2rem}
+.row .k{
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.68rem;text-transform:uppercase;letter-spacing:.13em;
+  color:var(--muted);margin:0 0 .15rem;
+}
+.row .v{margin:0}
+.dl{
+  display:inline-block;
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--paper);background:var(--accent);
+  padding:.75rem 1.3rem;border-radius:3px;
+  text-decoration:none;
+  margin:.4rem 0 1.4rem;
+}
+.dl:hover{background:#243B52}
+.updated{font-family:"Archivo",system-ui,sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -115,55 +151,54 @@ h2.label::before{content:"";width:1.5rem;height:1px;background:var(--accent);fle
   <nav aria-label="Main">
     <a href="research.html" aria-current="page">Research</a>
     <a href="teaching.html">Teaching</a>
-    <a href="media.html">Media</a>
     <a href="cv.html">CV</a>
+    <a href="media.html">Media</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
   <h1 class="page">Research</h1>
 
-  <p>My work examines how nuclear deterrence and strategic stability operate under emerging tripolarity, combining quantitative models of major-power conflict with regional analyses of escalation dynamics in Asia and the Middle East.</p>
+  <section>
+    <h2 class="label">Published Research</h2>
 
-  <!-- NOTE: Verify every title, year, co-author name, and link below against the published versions before going live. Bracketed text is a placeholder. -->
+    <div class="entry">
+      <p>Ahamed, S. (2026). China&rsquo;s nuclear modernisation and the dynamics of the stability&ndash;instability paradox in U.S.&ndash;China strategic competition. <em>Journal of Current Chinese Affairs</em>. Online first. <a href="https://doi.org/10.1177/18681026261449411">https://doi.org/10.1177/18681026261449411</a></p>
+    </div>
 
-  <h2 class="label">Peer-Reviewed Articles</h2>
+    <div class="entry">
+      <p>Gallagher, M., &amp; Ahamed, S. (2025). The changing face of peace: African mediation and paradigm transition. <em>African Studies Quarterly, 23</em>(2), 26&ndash;50. <a href="https://doi.org/10.32473/asq.23.2.136992">https://doi.org/10.32473/asq.23.2.136992</a></p>
+    </div>
 
-  <div class="pub">
-    <p class="title">[Exact article title — China&rsquo;s nuclear modernization and the stability&ndash;instability paradox]</p>
-    <p class="venue"><em>Journal of Current Chinese Affairs</em>, 2026. <a href="https://doi.org/10.1177/18681026261449411">doi.org/10.1177/18681026261449411</a></p>
-  </div>
+    <div class="entry">
+      <p>Ahamed, S. (2023). The impact of China&rsquo;s nuclear expansion and prospects of the Southeast Asian Nuclear-Weapon-Free Zone Treaty. In <em>Expanding Perspectives of Nuclear Disarmament</em> (pp. 69&ndash;86). Alva Myrdal Centre for Nuclear Disarmament, Uppsala University. <a href="https://www.uu.se/download/18.57b82b193dec272bc5a246/1735901226330/c_1076590-l_3-k_202312-amcexpandingperspectivesfinal.pdf">View publication</a></p>
+    </div>
+  </section>
 
-  <div class="pub">
-    <p class="title">[Exact article title — African mediation and paradigm transitions] (with M.&nbsp;Gallagher)</p>
-    <p class="venue"><em>African Studies Quarterly</em>, 2025. <a href="#">[Link]</a></p>
-  </div>
+  <section>
+    <h2 class="label">Submitted Book Chapters</h2>
+    <ul class="plain">
+      <li>Ahamed, S., &amp; Nabil, A. &ldquo;Strategic Deterrence in the Middle East and North Africa: Old Ships Navigating New Dynamics, 2011&ndash;2025.&rdquo; Book chapter submitted for publication.</li>
+      <li>Ahamed, S. &ldquo;Great Power Politics in Cyberspace.&rdquo; Book chapter submitted for publication.</li>
+    </ul>
+  </section>
 
-  <h2 class="label">Book Chapters</h2>
+  <section>
+    <h2 class="label">Work in Progress</h2>
+    <ul class="plain">
+      <li>&ldquo;Patterns and Drivers of Veto Use in the United Nations Security Council: An Empirical Analysis, 1946&ndash;2025.&rdquo;</li>
+      <li>&ldquo;Major-Power Hierarchy and International Conflict, 1816&ndash;2024: Does a Wider Capability Gap Reduce the Frequency and Severity of Inter-State Conflict?&rdquo;</li>
+    </ul>
+  </section>
 
-  <div class="pub">
-    <p class="title">[Exact chapter title — China&rsquo;s nuclear expansion and the SEANWFZ Treaty]</p>
-    <p class="venue">In <em>Expanding Perspectives on Nuclear Disarmament</em>, Alva Myrdal Centre for Nuclear Disarmament, Uppsala University, 2023. <a href="#">[Link]</a></p>
-  </div>
-
-  <h2 class="label">Working Papers</h2>
-
-  <div class="pub">
-    <p class="title">[Working paper title — deterrence and regional security complexes in the Middle East]</p>
-    <p class="venue">Under review.</p>
-  </div>
-
-  <div class="pub">
-    <p class="title">[Dissertation paper title — modeling major-power war onset under tripolarity]</p>
-    <p class="venue">In progress.</p>
-  </div>
-
-  <h2 class="label">Policy &amp; Public Writing</h2>
-
-  <div class="pub">
-    <p class="title">[Exact title — the India&ndash;Pakistan crisis on Kahn&rsquo;s escalation ladder]</p>
-    <p class="venue"><em>The Diplomat</em> / SSRN, 2025. <a href="#">[Link]</a></p>
-  </div>
+  <section>
+    <h2 class="label">Conference Presentations</h2>
+    <ul class="plain">
+      <li>&ldquo;Power Transitions and Strategic Instability in a Tripolar World.&rdquo; International Studies Association Annual Convention, March 22&ndash;25, 2026, Columbus, Ohio.</li>
+      <li>&ldquo;From Deterrence to Escalation: The Stability&ndash;Instability Paradox in China&rsquo;s Nuclear Strategy.&rdquo; International Studies Association Annual Convention, April 3&ndash;6, 2024, San Francisco, California.</li>
+    </ul>
+  </section>
 
 </main>
 
